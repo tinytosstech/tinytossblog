@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/tinytossblog/static/css/main.d863163c.css",
-    "main.js": "/tinytossblog/static/js/main.d95bb33b.js",
+    "main.js": "/tinytossblog/static/js/main.03fd851f.js",
     "index.html": "/tinytossblog/index.html",
     "main.d863163c.css.map": "/tinytossblog/static/css/main.d863163c.css.map",
-    "main.d95bb33b.js.map": "/tinytossblog/static/js/main.d95bb33b.js.map"
+    "main.03fd851f.js.map": "/tinytossblog/static/js/main.03fd851f.js.map"
   },
   "entrypoints": [
     "static/css/main.d863163c.css",
-    "static/js/main.d95bb33b.js"
+    "static/js/main.03fd851f.js"
   ]
 }
