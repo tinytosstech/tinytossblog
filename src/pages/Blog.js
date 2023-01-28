@@ -56,12 +56,12 @@ function Blog() {
     <div>
       <Navbar></Navbar>
       
-      <div className="w-[60%] h-[100%] mx-auto flex flex-col pb-6">
-      <div className="mx-auto text-3xl hover:scale-110 duration-300">{output.title}</div>
+      <div className="w-[60%] h-[100%] mx-auto flex flex-col pb-6 max-lg:w-[80%]">
+      <div className="mx-auto text-3xl hover:scale-110 duration-300 max-lg:text-2xl">{output.title}</div>
         <RichText
           content={content}
           renderers={{
-            h2: ({ children }) => <h2 className="text-3xl mt-4 hover:translate-x-2 duration-300">{children}</h2>,
+            h2: ({ children }) => <h2 className="text-3xl mt-4 hover:translate-x-2 duration-300 max-lg:text-lg max-lg:font-semibold">{children}</h2>,
             h3: ({ children }) => <h3 className="text-2xl ">{children}</h3>,
             img: ({ src, alt }) => (
               <LazyLoadImage
@@ -71,18 +71,18 @@ function Blog() {
                 alt={alt}
               />
             ),
-            p: ({ children }) => <p className=" text-lg mt-4">{children}</p>,
-            a: ({ children }) => <a className=" text-lg mt-4 text-red-500">{children}</a>,
+            p: ({ children }) => <p className=" text-lg mt-4 max-lg:text-sm">{children}</p>,
+            a: ({ children }) => <a className=" text-lg mt-4 text-red-500 max-lg:text-sm">{children}</a>,
             ul: ({ children }) => (
-              <ul className="list-disc list-inside mt-4 text-lg">{children}</ul>
+              <ul className="list-disc list-inside mt-4 text-lg max-lg:text-sm">{children}</ul>
             ),
             ol: ({ children }) =>
-              <ol className="list-decimal list-inside  text-lg ">{children}</ol>,
-            li: ({ children }) => <li className="my-2 text-lg ">{children}</li>,
+              <ol className="list-decimal list-inside  text-lg max-lg:text-sm">{children}</ol>,
+            li: ({ children }) => <li className="my-2 text-lg  max-lg:text-sm">{children}</li>,
             code: ({ children }) =>
-              <code className="bg-gray-100 dark:bg-gray-800 rounded-md p-2 text-sm text-green-400 w-[100px] ">{children}</code>,
+              <code className="bg-gray-100 dark:bg-gray-800 rounded-md p-2 text-sm text-green-400 w-[100px] max-lg:text-sm">{children}</code>,
             code_block: ({ children }) =>
-              <pre className="bg-gray-100 dark:bg-gray-800 overflow-y-scroll rounded-md p-2 text-sm ">${children}</pre>,
+              <pre className="bg-gray-100 dark:bg-gray-800 overflow-y-scroll rounded-md p-2 max-lg:text-sm ">${children}</pre>,
           }}
         />
       </div>

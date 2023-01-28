@@ -65,13 +65,13 @@ function Blog() {
       <Navbar></Navbar>
       <div className="w-[94%] h-[100%] mx-auto  flex  flex-col mt-[-20px] ">
         <h1 className=" mx-auto">Blog</h1>
-        <h1 className=" text-5xl mx-auto mb-2"> Tinytossblog</h1>
+        <h1 className=" text-5xl mx-auto mb-2 max-lg:text-4xl"> Tinytossblog</h1>
         <h1 className=" mx-auto"> Technology & Lifestyle </h1>
       </div>
 
-      <div className=" w-[100%] h-[100%] mx-auto  flex relative group justify-evenly flex-wrap  ">
+      <div className=" w-[100%] h-[100%] mx-auto  flex relative group justify-evenly flex-wrap max-lg:grid max-lg:grid-cols-2 ">
         <Displayblog></Displayblog>
-        <Displayblog></Displayblog>
+        
       </div>
     </div>
   );

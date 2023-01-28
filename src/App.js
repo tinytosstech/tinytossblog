@@ -50,7 +50,7 @@ function App() {
       <div>
       
           <Routes>
-            <Route path="/" element={<Welcome />}></Route>
+            <Route path="/tinytossblog" element={<Welcome />}></Route>
             <Route path="/Blog" element={<Bloghome />}></Route>
             {data.tiny_blog.map((slug) => {
               return(
