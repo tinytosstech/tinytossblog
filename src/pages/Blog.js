@@ -46,11 +46,7 @@ function Blog() {
     );
   if (error) return <p>Error : {error.message}</p>;
   const output = data.tiny_blog.find((element) => element.slug === slug);
-
   const content = output.content.json;
-
-  const sharedClasses = "dark:text-white";
-  const bodyClasses = "text-lg text-gray-700";
 
   return (
     <div>

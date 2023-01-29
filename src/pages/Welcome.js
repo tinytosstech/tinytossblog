@@ -14,7 +14,7 @@ useLayoutEffect(() => {
 
   return (
     <div className="Welcome ">
-      <div className="mt-[8px] w-[100%] ml-[8px] flex max-lg:flex-col max-lg:justify-center max-lg:items-center relative group max-lg:mx-0">
+      <div className="mt-[8px] w-[100%]  ml-[8px] flex max-lg:flex-col max-lg:justify-center max-lg:items-center relative group max-lg:mx-0">
         <div className=" h-[80vh] w-[47.7vw]  rounded-md hover:scale-[0.98] transition duration-300 ease-in-out  max-lg:h-[60vw] max-lg:w-[95vw] ">
           <LazyLoadImage
             className=" h-[80vh] w-[47.7vw] rounded-md max-lg:h-[60vw] max-lg:w-[95vw]"
@@ -24,7 +24,7 @@ useLayoutEffect(() => {
             placeholderSrc="https://media0.giphy.com/media/a5viI92PAF89q/200w.webp?cid=ecf05e47ubrqng0x8ixusg8fg9yzswq7uf2mzd7650ai8u7s&rid=200w.webp&ct=g"
           />
         </div>
-        <div className=" h-[80vh] w-[48.7vw]  ml-[8px] rounded-md flex flex-col justify-center items-center max-lg:h-[100%] max-lg:w-[100%] max-lg:my-5">
+        <div className=" h-[80vh] w-[50.7vw]  ml-[8px] rounded-md flex flex-col justify-center items-center max-lg:h-[100%] max-lg:w-[100%] max-lg:my-5">
           <div className=" text-6xl transition hover:-translate-y-3 duration-300 hover:scale-1 max-lg:text-4xl">
             Tinytoss Design
           </div>

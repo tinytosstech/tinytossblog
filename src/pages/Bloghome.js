@@ -3,15 +3,6 @@ import Navbar from "../components/Navbar";
 import { useQuery, gql } from "@apollo/client";
 import { useLayoutEffect } from "react";
 
-import HashLoader from "react-spinners/HashLoader";
-const override = {
-  display: "flex",
-  height: "100vh",
-  width : "100%",
-  borderColor: "red",
-};
-
-
 const GET_data = gql`
   query {
     tiny_blog {
@@ -32,14 +23,7 @@ const GET_data = gql`
 function Displayblog() {
   const { loading, error, data } = useQuery(GET_data);
   
-  if (loading) return <HashLoader
-  color={"#36d7b7"}
-  cssOverride={override}
-  size={150}
-  aria-label="Loading Spinner"
-  data-testid="loader"
-  className=" mx-auto my-auto"
-/>;
+  if (loading) return <p className="ml-8 font-extralight">Loading...</p>;
   if (error) return <p>Error : {error.message}</p>;
 
   return data.tiny_blog.map((index) => {

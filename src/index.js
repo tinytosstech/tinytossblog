@@ -3,7 +3,6 @@ import ReactDOM from "react-dom/client";
 import App from "./App";
 import "./index.css";
 import { BrowserRouter } from "react-router-dom";
-
 import {
   ApolloClient,
   InMemoryCache,
@@ -15,6 +14,7 @@ const client = new ApolloClient({
   uri: "https://api-ap-northeast-1.hygraph.com/v2/cld8mpr860qwg01rof8ev10x6/master",
   cache: new InMemoryCache(),
 });
+
 
 client
   .query({
